@@ -1,0 +1,502 @@
+@charset "UTF-8";
+@-webkit-keyframes typed {
+  /* string 1, char 1 */
+  0%, 0.7205% {
+    content: "C";
+  }
+  /* string 1, char 2 */
+  0.7215%, 1.442% {
+    content: "Co";
+  }
+  /* string 1, char 3 */
+  1.443%, 2.1635% {
+    content: "Cod";
+  }
+  /* string 1, char 4 */
+  2.1645%, 2.885% {
+    content: "Code";
+  }
+  /* string 1, char 5 */
+  2.886%, 3.6065% {
+    content: "Code,";
+  }
+  /* string 1, char 6 */
+  3.6075%, 4.328% {
+    content: "Code, ";
+  }
+  /* string 1, char 7 */
+  4.329%, 5.04951% {
+    content: "Code, c";
+  }
+  /* string 1, char 8 */
+  5.05051%, 5.77101% {
+    content: "Code, co";
+  }
+  /* string 1, char 9 */
+  5.77201%, 6.49251% {
+    content: "Code, cod";
+  }
+  /* string 1, char 10 */
+  6.49351%, 7.21401% {
+    content: "Code, code";
+  }
+  /* string 1, char 11 */
+  7.21501%, 7.93551% {
+    content: "Code, code,";
+  }
+  /* string 1, char 12 */
+  7.93651%, 8.65701% {
+    content: "Code, code, ";
+  }
+  /* string 1, char 13 */
+  8.65801%, 9.37851% {
+    content: "Code, code, c";
+  }
+  /* string 1, char 14 */
+  9.37951%, 10.10001% {
+    content: "Code, code, co";
+  }
+  /* string 1, char 15 */
+  10.10101%, 10.82151% {
+    content: "Code, code, cod";
+  }
+  /* string 1, char 16 */
+  10.82251%, 11.54301% {
+    content: "Code, code, code";
+  }
+  /* string 1, char 17 */
+  11.54401%, 12.26451% {
+    content: "Code, code, code.";
+  }
+  /* string 1, char 18 */
+  12.26551%, 12.98601% {
+    content: "Code, code, code..";
+  }
+  /* string 1, char 19 */
+  12.98701%, 28.71473% {
+    content: "Code, code, code...";
+  }
+  /* string 1, char 20 */
+  28.71573%, 29.29193% {
+    content: "Code, code, code..";
+  }
+  /* string 1, char 21 */
+  29.29293%, 29.86913% {
+    content: "Code, code, code.";
+  }
+  /* string 1, char 22 */
+  29.87013%, 30.44633% {
+    content: "Code, code, code";
+  }
+  /* string 1, char 23 */
+  30.44733%, 31.02353% {
+    content: "Code, code, cod";
+  }
+  /* string 1, char 24 */
+  31.02453%, 31.60073% {
+    content: "Code, code, co";
+  }
+  /* string 1, char 25 */
+  31.60173%, 32.17793% {
+    content: "Code, code, c";
+  }
+  /* string 1, char 26 */
+  32.17893%, 32.75513% {
+    content: "Code, code, ";
+  }
+  /* string 1, char 27 */
+  32.75613%, 33.33233% {
+    content: "Code, code,";
+  }
+  /* string 1, char 28 */
+  33.33333%, 33.90953% {
+    content: "Code, code";
+  }
+  /* string 1, char 29 */
+  33.91053%, 34.48673% {
+    content: "Code, cod";
+  }
+  /* string 1, char 30 */
+  34.48773%, 35.06394% {
+    content: "Code, co";
+  }
+  /* string 1, char 31 */
+  35.06494%, 35.64114% {
+    content: "Code, c";
+  }
+  /* string 1, char 32 */
+  35.64214%, 36.21834% {
+    content: "Code, ";
+  }
+  /* string 1, char 33 */
+  36.21934%, 36.79554% {
+    content: "Code,";
+  }
+  /* string 1, char 34 */
+  36.79654%, 37.37274% {
+    content: "Code";
+  }
+  /* string 1, char 35 */
+  37.37374%, 37.94994% {
+    content: "Cod";
+  }
+  /* string 1, char 36 */
+  37.95094%, 38.52714% {
+    content: "Co";
+  }
+  /* string 1, char 37 */
+  38.52814%, 39.10434% {
+    content: "C";
+  }
+  /* string 1, char 38 */
+  39.10534%, 46.31935% {
+    content: "​";
+  }
+  /* string 2, char 1 */
+  46.32035%, 62.04806% {
+    content: "🐛";
+  }
+  /* string 2, char 2 */
+  62.04906%, 69.26307% {
+    content: "​";
+  }
+  /* string 3, char 1 */
+  69.26407%, 69.98457% {
+    content: "E";
+  }
+  /* string 3, char 2 */
+  69.98557%, 70.70607% {
+    content: "En";
+  }
+  /* string 3, char 3 */
+  70.70707%, 71.42757% {
+    content: "Enj";
+  }
+  /* string 3, char 4 */
+  71.42857%, 72.14907% {
+    content: "Enjo";
+  }
+  /* string 3, char 5 */
+  72.15007%, 72.87057% {
+    content: "Enjoy";
+  }
+  /* string 3, char 6 */
+  72.87157%, 73.59207% {
+    content: "Enjoy ";
+  }
+  /* string 3, char 7 */
+  73.59307%, 89.32079% {
+    content: "Enjoy ☕";
+  }
+  /* string 3, char 8 */
+  89.32179%, 89.89799% {
+    content: "Enjoy ";
+  }
+  /* string 3, char 9 */
+  89.89899%, 90.47519% {
+    content: "Enjoy";
+  }
+  /* string 3, char 10 */
+  90.47619%, 91.05239% {
+    content: "Enjo";
+  }
+  /* string 3, char 11 */
+  91.05339%, 91.62959% {
+    content: "Enj";
+  }
+  /* string 3, char 12 */
+  91.63059%, 92.20679% {
+    content: "En";
+  }
+  /* string 3, char 13 */
+  92.20779%, 92.78399% {
+    content: "E";
+  }
+  /* string 3, char 14 */
+  92.78499%, 100% {
+    content: "​";
+  }
+}
+@keyframes typed {
+  /* string 1, char 1 */
+  0%, 0.7205% {
+    content: "C";
+  }
+  /* string 1, char 2 */
+  0.7215%, 1.442% {
+    content: "Co";
+  }
+  /* string 1, char 3 */
+  1.443%, 2.1635% {
+    content: "Cod";
+  }
+  /* string 1, char 4 */
+  2.1645%, 2.885% {
+    content: "Code";
+  }
+  /* string 1, char 5 */
+  2.886%, 3.6065% {
+    content: "Code,";
+  }
+  /* string 1, char 6 */
+  3.6075%, 4.328% {
+    content: "Code, ";
+  }
+  /* string 1, char 7 */
+  4.329%, 5.04951% {
+    content: "Code, c";
+  }
+  /* string 1, char 8 */
+  5.05051%, 5.77101% {
+    content: "Code, co";
+  }
+  /* string 1, char 9 */
+  5.77201%, 6.49251% {
+    content: "Code, cod";
+  }
+  /* string 1, char 10 */
+  6.49351%, 7.21401% {
+    content: "Code, code";
+  }
+  /* string 1, char 11 */
+  7.21501%, 7.93551% {
+    content: "Code, code,";
+  }
+  /* string 1, char 12 */
+  7.93651%, 8.65701% {
+    content: "Code, code, ";
+  }
+  /* string 1, char 13 */
+  8.65801%, 9.37851% {
+    content: "Code, code, c";
+  }
+  /* string 1, char 14 */
+  9.37951%, 10.10001% {
+    content: "Code, code, co";
+  }
+  /* string 1, char 15 */
+  10.10101%, 10.82151% {
+    content: "Code, code, cod";
+  }
+  /* string 1, char 16 */
+  10.82251%, 11.54301% {
+    content: "Code, code, code";
+  }
+  /* string 1, char 17 */
+  11.54401%, 12.26451% {
+    content: "Code, code, code.";
+  }
+  /* string 1, char 18 */
+  12.26551%, 12.98601% {
+    content: "Code, code, code..";
+  }
+  /* string 1, char 19 */
+  12.98701%, 28.71473% {
+    content: "Code, code, code...";
+  }
+  /* string 1, char 20 */
+  28.71573%, 29.29193% {
+    content: "Code, code, code..";
+  }
+  /* string 1, char 21 */
+  29.29293%, 29.86913% {
+    content: "Code, code, code.";
+  }
+  /* string 1, char 22 */
+  29.87013%, 30.44633% {
+    content: "Code, code, code";
+  }
+  /* string 1, char 23 */
+  30.44733%, 31.02353% {
+    content: "Code, code, cod";
+  }
+  /* string 1, char 24 */
+  31.02453%, 31.60073% {
+    content: "Code, code, co";
+  }
+  /* string 1, char 25 */
+  31.60173%, 32.17793% {
+    content: "Code, code, c";
+  }
+  /* string 1, char 26 */
+  32.17893%, 32.75513% {
+    content: "Code, code, ";
+  }
+  /* string 1, char 27 */
+  32.75613%, 33.33233% {
+    content: "Code, code,";
+  }
+  /* string 1, char 28 */
+  33.33333%, 33.90953% {
+    content: "Code, code";
+  }
+  /* string 1, char 29 */
+  33.91053%, 34.48673% {
+    content: "Code, cod";
+  }
+  /* string 1, char 30 */
+  34.48773%, 35.06394% {
+    content: "Code, co";
+  }
+  /* string 1, char 31 */
+  35.06494%, 35.64114% {
+    content: "Code, c";
+  }
+  /* string 1, char 32 */
+  35.64214%, 36.21834% {
+    content: "Code, ";
+  }
+  /* string 1, char 33 */
+  36.21934%, 36.79554% {
+    content: "Code,";
+  }
+  /* string 1, char 34 */
+  36.79654%, 37.37274% {
+    content: "Code";
+  }
+  /* string 1, char 35 */
+  37.37374%, 37.94994% {
+    content: "Cod";
+  }
+  /* string 1, char 36 */
+  37.95094%, 38.52714% {
+    content: "Co";
+  }
+  /* string 1, char 37 */
+  38.52814%, 39.10434% {
+    content: "C";
+  }
+  /* string 1, char 38 */
+  39.10534%, 46.31935% {
+    content: "​";
+  }
+  /* string 2, char 1 */
+  46.32035%, 62.04806% {
+    content: "🐛";
+  }
+  /* string 2, char 2 */
+  62.04906%, 69.26307% {
+    content: "​";
+  }
+  /* string 3, char 1 */
+  69.26407%, 69.98457% {
+    content: "E";
+  }
+  /* string 3, char 2 */
+  69.98557%, 70.70607% {
+    content: "En";
+  }
+  /* string 3, char 3 */
+  70.70707%, 71.42757% {
+    content: "Enj";
+  }
+  /* string 3, char 4 */
+  71.42857%, 72.14907% {
+    content: "Enjo";
+  }
+  /* string 3, char 5 */
+  72.15007%, 72.87057% {
+    content: "Enjoy";
+  }
+  /* string 3, char 6 */
+  72.87157%, 73.59207% {
+    content: "Enjoy ";
+  }
+  /* string 3, char 7 */
+  73.59307%, 89.32079% {
+    content: "Enjoy ☕";
+  }
+  /* string 3, char 8 */
+  89.32179%, 89.89799% {
+    content: "Enjoy ";
+  }
+  /* string 3, char 9 */
+  89.89899%, 90.47519% {
+    content: "Enjoy";
+  }
+  /* string 3, char 10 */
+  90.47619%, 91.05239% {
+    content: "Enjo";
+  }
+  /* string 3, char 11 */
+  91.05339%, 91.62959% {
+    content: "Enj";
+  }
+  /* string 3, char 12 */
+  91.63059%, 92.20679% {
+    content: "En";
+  }
+  /* string 3, char 13 */
+  92.20779%, 92.78399% {
+    content: "E";
+  }
+  /* string 3, char 14 */
+  92.78499%, 100% {
+    content: "​";
+  }
+}
+
+@-webkit-keyframes beam-blink {
+  75% {
+    border-color: transparent;
+  }
+}
+
+@keyframes beam-blink {
+  75% {
+    border-color: transparent;
+  }
+}
+
+* {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+#code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+  background-size: cover, 100% 3px;
+  font-size: 20px;
+  font-family: 'VT323', monospace, sans-serif;
+  color: #3f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#code::after {
+  content: "​";
+  position: relative;
+  display: inline-block;
+  padding-right: 3px;
+  padding-right: calc(3px + 0.1vw);
+  border-right: 10px solid rgba(51, 255, 51, 0.75);
+  border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
+  text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+  white-space: nowrap;
+  -webkit-animation: typed 13.86s linear 1s infinite, beam-blink 1s infinite;
+          animation: typed 13.86s linear 1s infinite, beam-blink 1s infinite;
+}
+
+#code::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 3px 0;
+  background: #00f;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 0.7px;
+  white-space: pre-wrap;
+}
+/*# sourceMappingURL=codeAnimation.css.map */
