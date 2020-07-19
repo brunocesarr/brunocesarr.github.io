@@ -1,29 +1,135 @@
 html,
 body,
-header,
-#intro {
-    height: 100%;
+header {
+  background-color: black;
+  height: 100%;
 }
 
+/*
+* ==========================================
+* Animation
+* ==========================================
+*/
+
+
+/*
+* ==========================================
+* NAVBAR
+* ==========================================
+*/
+#mainNav.navbar-scrolled {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+#mainNav.navbar-scrolled .navbar-brand {
+  color: #555;
+}
+#mainNav.navbar-scrolled .navbar-brand:hover {
+  color:#6794c2;
+}
+#mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
+  color: #555;
+}
+#mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
+  color:#6794c2;
+}
+.navbar {
+  color: white;
+  transition: all 0.4s;
+}
+
+.navbar .nav-link {
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar .navbar-brand {
+  color: #fff;
+}
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+  .navbar {
+    background: #fff;
+  }
+
+  .navbar .navbar-brand, .navbar .nav-link {
+    color: #555;
+  }
+
+  .navbar .nav-link:hover,
+  .navbar .nav-link:focus {
+    color:#6794c2;
+    text-decoration: none;
+  }
+}
+
+/*
+* ==========================================
+* SLIDE INTRO
+* ==========================================
+*/
 #intro {
-    background: url("https://www.allround-pc.com/wp-content/uploads/2018/09/razer-blackwidow-elite-gallery-02.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
+  background: url("https://images.unsplash.com/photo-1586165368502-1bad197a6461?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") no-repeat center center fixed;
+  -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
 }
 
-.top-nav-collapse {
-    background-color: #24355C;
-  }
-  @media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-      background-color: #24355C;
-    }
-  }
-  @media (min-width: 800px) and (max-width: 850px) {
-    .navbar:not(.top-nav-collapse) {
-      background-color: #24355C;
-    }
-  }
+/*
+* ==========================================
+* Contact
+* ==========================================
+*/
+#contact li {
+  list-style-type: none;
+}
+#contact li a{
+	color:#b1aca1;
+	padding:10px;
+  text-decoration:none;
+}
+
+#contact li a:hover{
+	color:#7dabdb;
+}
+
+.fa.fa-facebook , 
+.fa.fa-instagram,
+.fa.fa-at, 
+.fa.fa-github , 
+.fa.fa-linkedin {
+	color:#b1aca1;
+	font-size:30px;
+  padding:10px;
+  margin: 0 10px;
+}
+
+.fa.fa-facebook:hover, 
+.fa.fa-instagram:hover,
+.fa.fa-at:hover, 
+.fa.fa-github:hover, 
+.fa.fa-linkedin:hover {
+	color:#6794c2;
+}
+
+/*
+* ==========================================
+* Footer
+* ==========================================
+*/
+footer a{
+	color:#b1aca1;
+	padding:10px;
+	text-decoration:none;
+}
+
+footer a:hover{
+	color:#7dabdb;
+}

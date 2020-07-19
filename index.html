@@ -14,61 +14,146 @@
     <title>Bruno César - Personal Portfolio</title>
     <!-- CSS only -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
-  <body>
-    <section id="navbar">
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-share mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M11.724 3.947l-7 3.5-.448-.894 7-3.5.448.894zm-.448 9l-7-3.5.448-.894 7 3.5-.448.894z"/>
-              <path fill-rule="evenodd" d="M13.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm-11-6.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
-            </svg>
-            Portfolio
-          </a>  
+  <body id="page-top">
+    <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <span class="lead" style="font-size: 25px;"><ins>Dev</ins></span> Portfolio
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto my-2 my-lg-0">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projetos</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contatos</a></li>
+          </ul>
         </div>
-      </nav>
-    </section>
+      </div>
+    </nav>
 
-    <section id="presentation">
-      <!--Mask-->
-      <div id="intro" class="view">
-        <div class="mask rgba-black-strong">
-          <div class="container-fluid d-flex align-items-center justify-content-center h-100">
-            <div class="row d-flex justify-content-center text-center">
-              <div class="col-md-10">
-                  <!-- Heading -->
-                  <h2 class="display-4 font-weight-bold text-white pt-5 mb-2">Hi! I am Bruno.</h2>
+    <!-- Masthead-->
+    <header class="masthead" id="intro">
+      <div class="container h-100">
+          <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-md-12">
+              <h2 class="display-3 font-weight-bold text-white pt-5">Hi!</h2>
+              <h2 class="text-white my-3">I am Bruno</h2>
 
-                  <!-- Divider -->
-                  <hr class="hr-light">
+              <hr width="50%" style="height:2px;border-width:0;color:white;background-color:white">
 
-                  <!-- Description -->
-                  <h4 class="text-white my-4">
-                    Back and Front Developer
-                  </h4>
+              <h4 class="text-white my-4">
+                Back and Front Developer
+              </h4>
+          </div>
+          </div>
+      </div>
+    </header>
+
+    <section id="about" class="bg-light py-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+              <h2 class="mt-0">Um pouco sobre mim</h2>
+              <hr class="divider my-2" />
+              <p class="text-muted mb-5">"Live a life you will remember!"</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-6 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <img src="assets/images/foto_perfil.jpg" alt="Foto Perfil" height="300px">
+              <div class="card-body text-center">
+                <h5 class="card-title mb-0">Bruno C. Silva</h5>
+                <div class="card-text text-black-50">Developer</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-md-6 mb-4">
+            <div class="card border-0 shadow">
+              <div class="card-body">
+                <h5 class="card-title mb-4 text-center">...</h5>
+                <div class="card-text text-black-50">
+                  <p>
+                    Sim. Acredito no pensamento de Thomas Hobbes: "Conhecimento é poder". A procura do novo é uma arte. Estamos à nos construir. Eu vi e vivencio como é a caminhada, e o quanto ela nos torna cada vez melhores.
+                  </p>
+                  
+                  <p>
+                    Por essas e por outras, eu sou grande crente no poder do sorriso no rosto.
+                  </p>
+                                    
+                  <p>
+                    E é assim que busco meus sonhos. Poder viajar para conhecer as maravilhas que a Terra nos proporciona. Esse sentimento de paz é unico e relaxante. Nos permite conhecer novas culturas e pessoas, expandindo nosso pensamento.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-    </div>
-    <!--/.Mask-->
+      </div>
     </section>
 
-    <section id="presentation">
+    <section id="projects" class="text-white py-3">
       <div class="container">
-        <section>Bem Vindo</section>
-      </div>  
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-4">
+              <h2 class="mt-0">Projetos</h2>
+              <hr class="divider my-2" style="color:white;background-color:white" />
+              <p class="mb-5">Estes são alguns projetos desenvolvidos ou em desenvolvimento que podem ser encontrados em meu GitHub.</p>
+              <p></p>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <script src="js/bootstrap.min.js"></script>
+    <section id="contact" class="bg-light py-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center mb-4">
+              <h2 class="mt-0">Contatos</h2>
+              <hr class="divider my-2" />
+          </div>
+        </div>
+          <div class="row justify-content-center">
+            <a href="https://www.facebook.com/bruno.cesar.96592836" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/bruno._.cesar/" target="_blank"><i class="fa fa-instagram fa-2x"></i></i></a>
+            <a href="https://github.com/brunocesarr" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/bruno-silva-9a155816b/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="mailto:brunoc.15@hotmail.com?subject=Entrar em Contato" target="_blank"><i class="fa fa-at"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <a class="nav-link js-scroll-trigger" href="#page-top">Topo</a>
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </div>
+        <div class="small text-center text-muted">
+          Copyright © 2020 - <span class="lead" style="font-size: 18px;"><ins>Dev</ins></span> Portfolio
+        </div>
+      </div>
+    </footer>
+  
+    <!-- Bootstrap core JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Third party plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  
+    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/main.js"></script>
   </body>
 </html>
