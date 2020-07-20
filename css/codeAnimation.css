@@ -467,7 +467,7 @@
   background-size: cover, 100% 3px;
   font-size: 20px;
   font-family: 'VT323', monospace, sans-serif;
-  color: #3f3;
+  color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -478,9 +478,9 @@
   display: inline-block;
   padding-right: 3px;
   padding-right: calc(3px + 0.1vw);
-  border-right: 10px solid rgba(51, 255, 51, 0.75);
-  border-right: calc(1.1vw + 4px) solid rgba(51, 255, 51, 0.75);
-  text-shadow: 0 0 5px rgba(51, 255, 51, 0.75);
+  border-right: 10px solid rgba(255, 255, 255, 0.75);
+  border-right: calc(1.1vw + 4px) solid rgba(255, 255, 255, 0.75);
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.75);
   white-space: nowrap;
   -webkit-animation: typed 13.86s linear 1s infinite, beam-blink 1s infinite;
           animation: typed 13.86s linear 1s infinite, beam-blink 1s infinite;
@@ -492,7 +492,7 @@
   bottom: 0;
   width: 100%;
   padding: 3px 0;
-  background: #00f;
+  background: #fff;
   color: #fff;
   text-align: center;
   font-size: 18px;
