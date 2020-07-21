@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
     <link rel="stylesheet" href="css/codeAnimation.css" type="text/css">
+    <link rel="stylesheet" href="css/projects.css" type="text/css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -104,15 +105,17 @@
       </div>
     </section>
 
-    <section id="projects" class="text-white py-3">
+    <section id="projects" class="py-3">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center text-white">
           <div class="col-lg-8 text-center mb-4">
               <h2 class="mt-0">Projetos</h2>
               <hr class="divider my-2" style="color:white;background-color:white" />
               <p class="mb-5">Estes são alguns projetos desenvolvidos ou em desenvolvimento que podem ser encontrados em meu GitHub.</p>
               <p></p>
           </div>
+        </div>
+        <div class="justify-content-center projects-github">
         </div>
       </div>
     </section>
@@ -155,7 +158,13 @@
       </div>
     </footer>
   
-    <!-- Bootstrap core JS-->
+    <script text="text/javascript">
+      $(document).ready(function() {
+        $(".projects-github").load("projects.html")
+      });
+    </script>
+
+  <!-- Bootstrap core JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Third party plugin JS-->
