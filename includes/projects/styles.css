@@ -1,0 +1,10 @@
+.card-ui{height:15rem}
+.card-ui-back,.card-ui-front{width:100%;height:100%;padding:5px;border-radius:5px;-webkit-box-shadow:0 1.5rem 4rem rgba(0,0,0,.4);box-shadow:0 1.5rem 4rem rgba(0,0,0,.4);-webkit-transition:.9s cubic-bezier(.25,.8,.25,1);transition:.9s cubic-bezier(.25,.8,.25,1);-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden}
+.card-ui-back:after,.card-ui-back:before,.card-ui-front:after,.card-ui-front:before{position:absolute}
+.card-ui-front{position:absolute;background:linear-gradient(-45deg,#101010,#000);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:auto;width:100%;height:100%}
+.card-ui-front:after{color:#fff}
+.card-ui-back{background-color:#101010;text-align:center;display:-ms-grid;display:grid;padding-top:10px;-webkit-transform:rotateX(180deg);transform:rotateX(180deg)}
+.card-ui-back:after{color:#11181f}
+.card-ui-back a{font-size:0}
+.card-ui:hover .card-ui-front{-webkit-transform:rotateX(-180deg);transform:rotateX(-180deg)}
+.card-ui:hover .card-ui-back{-webkit-transform:rotateX(0);transform:rotateX(0)}

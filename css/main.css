@@ -7,12 +7,6 @@ header {
 
 /*
 * ==========================================
-* Animation
-* ==========================================
-*/
-
-/*
-* ==========================================
 * Logo DEV
 * ==========================================
 */
@@ -79,56 +73,6 @@ header {
     color:#6794c2;
     text-decoration: none;
   }
-}
-
-/*
-* ==========================================
-* SLIDE INTRO
-* ==========================================
-*/
-#intro {
-  background: url("https://images.unsplash.com/photo-1586165368502-1bad197a6461?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") no-repeat center center fixed;
-  -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-/*
-* ==========================================
-* Contact
-* ==========================================
-*/
-#contact li {
-  list-style-type: none;
-}
-#contact li a{
-	color:#b1aca1;
-	padding:10px;
-  text-decoration:none;
-}
-
-#contact li a:hover{
-	color:#7dabdb;
-}
-
-.fa.fa-facebook , 
-.fa.fa-instagram,
-.fa.fa-at, 
-.fa.fa-github , 
-.fa.fa-linkedin {
-	color:#b1aca1;
-	font-size:30px;
-  padding:10px;
-  margin: 0 10px;
-}
-
-.fa.fa-facebook:hover, 
-.fa.fa-instagram:hover,
-.fa.fa-at:hover, 
-.fa.fa-github:hover, 
-.fa.fa-linkedin:hover {
-	color:#6794c2;
 }
 
 /*

@@ -1,177 +1,111 @@
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Bruno César - Personal Portfolio">
-    <meta name="keywords" content="Portfolio, Personal">
-    <meta name="author" content="brunocesarr">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Bruno César - Personal Portfolio">
+  <meta name="keywords" content="Portfolio, Personal">
+  <meta name="author" content="brunocesarr">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Title -->
-    <title>Bruno César - Personal Portfolio</title>
+  <!-- Title -->
+  <title>Bruno César - Personal Portfolio</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@500&family=VT323&display=swap" rel="stylesheet">
+  <!-- add icon link -->
+  <link rel="icon" href="assets/images/dev.png" type="image/x-icon">
 
-    <!-- CSS only -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/contacts.css" type="text/css">
-    <link rel="stylesheet" href="css/codeAnimation.css" type="text/css">
-    <link rel="stylesheet" href="css/projects.css" type="text/css">
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@500&family=VT323&display=swap"
+    rel="stylesheet">
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </head>
+  <!-- CSS only -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <body id="page-top">
-    <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-          <span class="dev">DEV</span> Portfolio
-        </a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto my-2 my-lg-0">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projetos</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contatos</a></li>
-          </ul>
-        </div>
+  <!-- CSS index -->
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <!-- CSS intro -->
+  <link rel="stylesheet" href="includes/intro/styles.css" type="text/css">
+  <!-- CSS contacts -->
+  <link rel="stylesheet" href="includes/contacts/styles.css" type="text/css">
+  <!-- CSS projects -->
+  <link rel="stylesheet" href="includes/projects/styles.css" type="text/css">
+
+  <!-- CSS Animations -->
+  <link rel="stylesheet" href="css/animations/codeAnimation.css" type="text/css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body id="page-top">
+  <!-- Nav Header -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="dev">DEV</span> Portfolio
+      </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto my-2 my-lg-0">
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contatos</a></li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- Masthead-->
-    <header class="masthead" id="intro">
-      <div class="container h-100">
-          <div class="row h-100 align-items-center justify-content-center text-center">
-            <div class="col-md-12">
-              <h2 class="display-3 font-weight-bold text-white pt-5">Hi!</h2>
-              <h2 class="text-white my-3">I am Bruno</h2>
+  <header class="masthead" id="intro"></header>
 
-              <hr width="50%" style="height:2px;border-width:0;color:white;background-color:white">
+  <section id="about" class="bg-light py-3"></section>
 
-              <h4 class="text-white my-4">
-                ...
-              </h4>
-          </div>
-          </div>
+  <section id="projects" class="py-3"></section>
+
+  <section id="contact" class="bg-light py-3"></section>
+
+  <section class="animation">
+    <div class="pt-3" id="code"></div>
+  </section>
+
+  <!-- Footer-->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <a class="nav-link js-scroll-trigger" href="#page-top">Topo</a>
+        <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+        <a class="nav-link js-scroll-trigger" href="#projects">Projetos</a>
+        <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
       </div>
-    </header>
-
-    <section id="about" class="bg-light py-3">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-              <h2 class="mt-0">Um pouco sobre mim</h2>
-              <hr class="divider my-2" />
-              <p class="text-muted mb-5">"Live a life you will remember!"</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-6 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <img src="assets/images/foto_perfil.jpg" alt="Foto Perfil" height="300px">
-              <div class="card-body text-center">
-                <h5 class="card-title mb-0">Bruno C. Silva</h5>
-                <div class="card-text text-black-50">Developer</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-md-6 mb-4">
-            <div class="card border-0 shadow">
-              <div class="card-body">
-                <h5 class="card-title mb-4 text-center">...</h5>
-                <div class="card-text text-black-50">
-                  <p>
-                    Sim. Acredito no pensamento de Thomas Hobbes: "Conhecimento é poder". A procura do novo é uma arte. Estamos à nos construir. Eu vi e vivencio como é a caminhada, e o quanto ela nos torna cada vez melhores.
-                  </p>
-                  
-                  <p>
-                    Por essas e por outras, eu sou grande crente no poder do sorriso no rosto.
-                  </p>
-                                    
-                  <p>
-                    E é assim que busco meus sonhos. Poder viajar para conhecer as maravilhas que a Terra nos proporciona. Esse sentimento de paz é unico e relaxante. Nos permite conhecer novas culturas e pessoas, expandindo nosso pensamento.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="small text-center text-muted">
+        Copyright © 2020 - <span class="dev" style="font-size: 18px;">Dev</span> Portfolio
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <section id="projects" class="py-3">
-      <div class="container">
-        <div class="row justify-content-center text-white">
-          <div class="col-lg-8 text-center mb-4">
-              <h2 class="mt-0">Projetos</h2>
-              <hr class="divider my-2" style="color:white;background-color:white" />
-              <p class="mb-5">Estes são alguns projetos desenvolvidos ou em desenvolvimento que podem ser encontrados em meu GitHub.</p>
-              <p></p>
-          </div>
-        </div>
-        <div class="justify-content-center projects-github">
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="bg-light py-3">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center mb-4">
-              <h2 class="mt-0">Contatos</h2>
-              <hr class="divider my-2" />
-          </div>
-        </div>
-        <div class="row justify-content-center social-icons">
-          <a href="https://www.facebook.com/bruno.cesar.96592836" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-          <a href="https://www.instagram.com/bruno._.cesar/" target="_blank"><i class="fa fa-instagram fa-2x"></i></i></a>
-          <a href="https://github.com/brunocesarr" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-          <a href="https://www.linkedin.com/in/bruno-silva-9a155816b/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-          <a href="mailto:brunoc.15@hotmail.com?subject=Entrar em Contato" target="_blank"><i class="fa fa-at"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <section class="animation">
-      <div class="pt-3" id="code"></div>
-    </section>
-
-    <!-- Footer-->
-    <footer class="py-5">
-      <div class="container">
-        <div class="row justify-content-center">
-          <a class="nav-link js-scroll-trigger" href="#page-top">Topo</a>
-          <a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
-          <a class="nav-link js-scroll-trigger" href="#projects">Projetos</a>
-          <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
-        </div>
-        <div class="small text-center text-muted">
-          Copyright © 2020 - <span class="dev" style="font-size: 18px;">Dev</span> Portfolio
-        </div>
-      </div>
-    </footer>
-  
-    <script text="text/javascript">
-      $(document).ready(function() {
-        $(".projects-github").load("projects.html")
-      });
-    </script>
+  <script text="text/javascript">
+    $(document).ready(function () {
+      $("#intro").load("includes/intro/index.html");
+      $("#about").load("includes/about/index.html");
+      $("#projects").load("includes/projects/index.html");
+      $("#contact").load("includes/contacts/index.html");
+    });
+  </script>
 
   <!-- Bootstrap core JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- Third party plugin JS-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
-  
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="js/main.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+  <!-- <script src="js/bootstrap.min.js"></script> -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
