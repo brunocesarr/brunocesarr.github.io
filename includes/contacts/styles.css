@@ -1,7 +1,7 @@
 #contact li{list-style-type:none}
 #contact li a{color:#b1aca1;padding:10px;text-decoration:none}
 #contact li a:hover{color:#7dabdb}
-.fa.fa-at,.fa.fa-facebook,.fa.fa-github,.fa.fa-instagram,.fa.fa-linkedin{color:#b1aca1;font-size:30px;padding:10px;margin:0 10px}
-.fa.fa-at:hover,.fa.fa-facebook:hover,.fa.fa-github:hover,.fa.fa-instagram:hover,.fa.fa-linkedin:hover{color:#6794c2}
+.fas.fa-at,.fab.fa-facebook-f,.fab.fa-github,.fab.fa-instagram,.fab.fa-linkedin{color:#b1aca1;font-size:30px;padding:10px;margin:0 10px}
+.fas.fa-at:hover,.fab.fa-facebook-f:hover,.fab.fa-github:hover,.fab.fa-instagram:hover,.fab.fa-linkedin:hover{color:#6794c2}
 .social-icons a:hover:before{transform:scale(0);transition:all 265ms ease-in}
 .social-icons a:hover i{transform:scale(1.5);-ms-transform:scale(1.5);-webkit-transform:scale(1.5);color:#6794c2;background:-webkit-linear-gradient(45deg,#6794c2,#6794c2);background-clip: inherit;-webkit-background-clip:text;-webkit-text-fill-color:transparent;transition:all 265ms ease-in}

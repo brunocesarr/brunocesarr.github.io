@@ -8,3 +8,66 @@
 .card-ui-back a{font-size:0}
 .card-ui:hover .card-ui-front{-webkit-transform:rotateX(-180deg);transform:rotateX(-180deg)}
 .card-ui:hover .card-ui-back{-webkit-transform:rotateX(0);transform:rotateX(0)}
+.project-title {word-wrap: break-all;}
+
+.fas.fa-code-branch { color:white;font-size:30px;padding:10px;margin:0 10px }
+.fas.fa-code-branch:hover{color:#6794c2;}
+
+div.page-project {
+  max-width: 100%;
+  display: none;
+}
+
+div.page-project.active {
+  display: flex;
+  animation: fadeDiv 1.5s;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+	border:none;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0px 20px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+button, button:visited, button:focus, button:hover, button:active { 
+	border:none;
+	outline: none;
+}
+
+button span {
+  position: relative;
+  display: inline-block;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.previous:hover span {
+  transform: translateX(-10px) scale(1.2);
+}
+
+.next:hover span {
+  transform: translateX(10px) scale(1.2);
+}
+
+.count-page {
+	color: white;
+	font-size: 1.5em;  
+}
+
+@keyframes fadeDiv {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
