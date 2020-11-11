@@ -13,15 +13,17 @@
 .fas.fa-code-branch { color:white;font-size:30px;padding:10px;margin:0 10px }
 .fas.fa-code-branch:hover{color:#6794c2;}
 
-div.page-project {
-  max-width: 100%;
-  display: none;
+@media (min-width: 450px) {
+  div.page-project {
+    display: none;
+  }
+  
 }
 
 div.page-project.active {
   display: flex;
   animation: fadeDiv 1.5s;
-}
+}  
 
 button {
   position: relative;

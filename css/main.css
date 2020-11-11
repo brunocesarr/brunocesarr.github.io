@@ -58,6 +58,9 @@ header {
   color: #fff;
 }
 
+.fas.fa-bars { color:black;font-size:1.5em;}
+.fas.fa-bars:hover{color:#9899c2;}
+
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
   .navbar {

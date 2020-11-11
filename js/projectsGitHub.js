@@ -73,7 +73,7 @@ const createPageProjects = (projects) => {
 
   projects.forEach((project, index) => {
     div_project += `
-      <div class="col-xl-4 col-md-4 mb-2">
+      <div class="col-xl-4 col-md-6 col-sm-12 mb-2">
         <div class="card-ui card shadow">
           <div class="card-ui-front">
             <img src="../assets/images/github-white.png" width="40%" />
