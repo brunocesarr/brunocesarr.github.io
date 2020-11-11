@@ -13,11 +13,8 @@
 .fas.fa-code-branch { color:white;font-size:30px;padding:10px;margin:0 10px }
 .fas.fa-code-branch:hover{color:#6794c2;}
 
-@media (min-width: 450px) {
-  div.page-project {
-    display: none;
-  }
-  
+div.page-project {
+  display: none;
 }
 
 div.page-project.active {
