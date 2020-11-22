@@ -27,18 +27,23 @@ header {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   background-color: #fff;
 }
+
 #mainNav.navbar-scrolled .navbar-brand {
   color: #555;
 }
+
 #mainNav.navbar-scrolled .navbar-brand:hover {
-  color:#6794c2;
+  color: #6794c2;
 }
+
 #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
   color: #555;
 }
+
 #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-  color:#6794c2;
+  color: #6794c2;
 }
+
 .navbar {
   color: white;
   transition: all 0.4s;
@@ -58,8 +63,14 @@ header {
   color: #fff;
 }
 
-.fas.fa-bars { color:black;font-size:1.5em;}
-.fas.fa-bars:hover{color:#9899c2;}
+.fas.fa-bars {
+  color: black;
+  font-size: 1.5em;
+}
+
+.fas.fa-bars:hover {
+  color: #9899c2;
+}
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
@@ -67,13 +78,14 @@ header {
     background: #fff;
   }
 
-  .navbar .navbar-brand, .navbar .nav-link {
+  .navbar .navbar-brand,
+  .navbar .nav-link {
     color: #555;
   }
 
   .navbar .nav-link:hover,
   .navbar .nav-link:focus {
-    color:#6794c2;
+    color: #6794c2;
     text-decoration: none;
   }
 }
@@ -83,12 +95,153 @@ header {
 * Footer
 * ==========================================
 */
-footer a{
-	color:#b1aca1;
-	padding:10px;
-	text-decoration:none;
+footer a {
+  color: #b1aca1;
+  padding: 10px;
+  text-decoration: none;
 }
 
-footer a:hover{
-	color:#7dabdb;
+footer a:hover {
+  color: #7dabdb;
 }
+
+/**===== pacman1 =====*/
+#pacman1 {
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  height: 50px;
+  width: 50px;
+  margin: -25px 0 0 -25px;
+}
+
+#pacman1:before,
+#pacman1:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 50px;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  -webkit-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  background-color: white;
+  border-radius: 1000px 0 0 1000px;
+}
+
+#pacman1:before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-animation: pacman-upper .5s ease infinite;
+  animation: pacman-upper .5s ease infinite;
+}
+
+#pacman1:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: pacman-lower .5s ease infinite;
+  animation: pacman-lower .5s ease infinite;
+}
+
+@-webkit-keyframes pacman-upper {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes pacman-upper {
+  0% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@-webkit-keyframes pacman-lower {
+  0% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes pacman-lower {
+  0% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+/** END of pacman1 */

@@ -4,12 +4,15 @@ let items;
 let itemCount;
 let nextItem;
 let previousItem;
+let errorApi;
+let loadingApi;
 let count = 0;
+let projects = [];
 
 const showNextItem = () => {
   items[count].classList.remove('active');
 
-  if(count < itemCount - 1) {
+  if (count < itemCount - 1) {
     count++;
   } else {
     count = 0;
@@ -21,7 +24,7 @@ const showNextItem = () => {
 const showPreviousItem = () => {
   items[count].classList.remove('active');
 
-  if(count > 0) {
+  if (count > 0) {
     count--;
   } else {
     count = itemCount - 1;
@@ -32,7 +35,7 @@ const showPreviousItem = () => {
 
 const keyPress = (e) => {
   e = e || window.event;
-  
+
   if (e.keyCode == '37') {
     showPreviousItem();
   } else if (e.keyCode == '39') {
@@ -42,25 +45,30 @@ const keyPress = (e) => {
 
 const getProjectsGitHub = async () => {
   try {
-    const res = await fetch(URL_GITHUB_API_MY_REPO);
-    const data = await res.json();
-    return data
-      .map(project => {
-        return {
-          name: project.name.toUpperCase().replace(/[._-]/g, " "),
-          description: project.description,
-          url: project.html_url,
-          languages: project.language,
-          license: project.license?.name,
-          created_at: new Date(project.created_at)
-        }
-      })
-      .sort((projectA, projectB) => {
-        projectA.created_at - projectB.created_at
-      })
-      .reverse();
+    if (projects.length === 0) {
+      const res = await fetch(URL_GITHUB_API_MY_REPO);
+      const data = await res.json();
+      projects = data
+        .map(project => {
+          return {
+            name: project.name.toUpperCase().replace(/[._-]/g, " "),
+            description: project.description,
+            url: project.html_url,
+            languages: project.language,
+            license: project.license?.name,
+            created_at: new Date(project.created_at)
+          }
+        })
+        .sort((projectA, projectB) => {
+          projectA.created_at - projectB.created_at
+        })
+        .reverse();
+    }
+
+    return projects;
   } catch (error) {
-    console.error(error.message)
+    console.error(error.message);
+    throw error;
   }
 }
 
@@ -68,7 +76,7 @@ const createPageProjects = (projects) => {
   let htmlPageProject = "";
   let projectsHTML = [];
   let div_project = "";
-  
+
   let pagesCount = Math.ceil(projects.length / 6);
 
   projects.forEach((project, index) => {
@@ -141,14 +149,19 @@ const createPagePagination = () => {
 }
 
 const addActionsInButtons = () => {
-  items = document.querySelectorAll('div.page-project');
-  itemCount = items.length;
-  nextItem = document.querySelector('.next');
-  previousItem = document.querySelector('.previous');
+  try {
+    items = document.querySelectorAll('div.page-project');
+    itemCount = items.length;
+    nextItem = document.querySelector('.next');
+    previousItem = document.querySelector('.previous');
 
-  nextItem.addEventListener('click', showNextItem);
-  previousItem.addEventListener('click', showPreviousItem);
-  document.addEventListener('keydown', keyPress);
+    nextItem.addEventListener('click', showNextItem);
+    previousItem.addEventListener('click', showPreviousItem);
+    document.addEventListener('keydown', keyPress);
+  } catch (error) {
+    console.error('Error: ', error.message);
+    throw error;
+  }
 }
 
 const renderProjects = async () => {
@@ -161,12 +174,20 @@ const renderProjects = async () => {
 
     PROJECTS_HTML += createPagePagination();
 
-    $("#projects-github").append(PROJECTS_HTML);
+    $("#projects-github").html(PROJECTS_HTML);
 
     addActionsInButtons();
   } catch (error) {
+    const PROJECTS_HTML = `
+      <p id="error-api" class="text-white text-center">Não foi possível buscar os projetos! Recarregue a página.</p>
+    `;
+    $("#projects").html(PROJECTS_HTML);
     console.error(error)
   }
 }
 
-renderProjects();
+window.onload = function () {
+  errorApi = document.querySelector("#error-api");
+  loadingApi = document.querySelector("#loading-api");
+  renderProjects();
+};
