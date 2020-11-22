@@ -155,6 +155,9 @@ const addActionsInButtons = () => {
     nextItem = document.querySelector('.next');
     previousItem = document.querySelector('.previous');
 
+    if (!nextItem || !previousItem || !items)
+      throw new Error('Variável nula ou carregamento incompleto.');
+
     nextItem.addEventListener('click', showNextItem);
     previousItem.addEventListener('click', showPreviousItem);
     document.addEventListener('keydown', keyPress);
@@ -178,11 +181,9 @@ const renderProjects = async () => {
 
     addActionsInButtons();
   } catch (error) {
-    const PROJECTS_HTML = `
-      <p id="error-api" class="text-white text-center">Não foi possível buscar os projetos! Recarregue a página.</p>
-    `;
-    $("#projects").html(PROJECTS_HTML);
+    alert('Não foi possível buscar os projetos! Recarregando a página...');
     console.error(error)
+    location.reload(true);
   }
 }
 
