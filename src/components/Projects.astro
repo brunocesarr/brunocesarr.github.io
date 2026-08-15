@@ -1,0 +1,106 @@
+---
+import repos from '../data/repos.json';
+import ProjectCard from './ProjectCard.astro';
+
+const PER_PAGE = 6;
+
+const pages = Array.from(
+  { length: Math.ceil(repos.length / PER_PAGE) },
+  (_, i) => repos.slice(i * PER_PAGE, i * PER_PAGE + PER_PAGE)
+);
+---
+<section id="projects" class="px-6 py-24">
+  <div class="mx-auto max-w-6xl">
+    <div class="text-center" data-reveal>
+      <h2 data-reveal-item class="text-3xl font-semibold">Projetos</h2>
+      <hr data-reveal-item class="mx-auto my-4 h-1 w-16 border-0 bg-accent" />
+      <p data-reveal-item class="mx-auto max-w-2xl text-muted">
+        Estes são alguns projetos desenvolvidos ou em desenvolvimento
+        que podem ser encontrados em meu GitHub.
+      </p>
+    </div>
+
+    {pages.length > 0 ? (
+      <div
+        data-carousel
+        data-reveal
+        class="relative mt-14"
+        role="region"
+        aria-roledescription="carrossel"
+        aria-label="Projetos"
+      >
+        <div
+          data-carousel-track
+          tabindex="0"
+          class="flex snap-x snap-mandatory overflow-x-auto scroll-smooth
+                 scrollbar-hide focus-visible:outline-2
+                 focus-visible:outline-offset-4 focus-visible:outline-accent-bright"
+        >
+          {pages.map((page, p) => (
+            <div
+              data-carousel-slide
+              role="group"
+              aria-roledescription="slide"
+              aria-label={`Página ${p + 1} de ${pages.length}`}
+              class="w-full shrink-0 snap-start px-px"
+            >
+              <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {page.map((repo) => <ProjectCard repo={repo} />)}
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        {pages.length > 1 && (
+          <div data-carousel-controls class="mt-10 flex items-center justify-center gap-6">
+            <button
+              type="button"
+              data-carousel-prev
+              aria-label="Projetos anteriores"
+              class="grid h-10 w-10 place-items-center rounded-full border border-white/15
+                     text-lg transition-colors hover:border-accent hover:text-accent-bright
+                     disabled:pointer-events-none disabled:opacity-30"
+            >
+              <span aria-hidden="true">←</span>
+            </button>
+
+            <ul class="flex items-center gap-2.5">
+              {pages.map((_, p) => (
+                <li>
+                  <button
+                    type="button"
+                    data-carousel-dot
+                    aria-label={`Ir para a página ${p + 1}`}
+                    class="block h-2 w-2 rounded-full bg-white/25 transition-all
+                           hover:bg-white/50
+                           [&.is-active]:w-6 [&.is-active]:bg-accent-bright"
+                  ></button>
+                </li>
+              ))}
+            </ul>
+
+            <button
+              type="button"
+              data-carousel-next
+              aria-label="Próximos projetos"
+              class="grid h-10 w-10 place-items-center rounded-full border border-white/15
+                     text-lg transition-colors hover:border-accent hover:text-accent-bright
+                     disabled:pointer-events-none disabled:opacity-30"
+            >
+              <span aria-hidden="true">→</span>
+            </button>
+          </div>
+        )}
+
+        <p data-carousel-status aria-live="polite" class="sr-only"></p>
+      </div>
+    ) : (
+      <p class="mt-14 text-center text-muted">
+        Projetos temporariamente indisponíveis —
+        <a href="https://github.com/brunocesarr?tab=repositories"
+           target="_blank" rel="noopener noreferrer"
+           class="text-accent-bright underline">veja no GitHub</a>.
+      </p>
+    )}
+  </div>
+</section>

@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@import "@fontsource/rajdhani/400.css";
+@import "@fontsource/rajdhani/600.css";
+@import "@fontsource/vt323/400.css";
+@import "@fontsource/press-start-2p/400.css";
+
+@theme {
+  --color-ink: #000000;
+  --color-paper: #ffffff;
+  --color-accent: #6794c2;
+  --color-accent-bright: #7dabdb;
+  --color-muted: #b1aca1;
+  --color-body: #555555;
+
+  --font-display: "Press Start 2P", system-ui, sans-serif;
+  --font-sans: "Rajdhani", system-ui, sans-serif;
+  --font-mono: "VT323", ui-monospace, monospace;
+}
+
+@utility scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;   /* replaces the jQuery easing smooth-scroll */
+    background-color: var(--color-ink);
+  }
+  body {
+    @apply bg-ink text-paper font-sans antialiased;
+  }
+  section[id] {
+    scroll-margin-top: 5rem;   /* replaces the hardcoded -72px offset */
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-accent-bright;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+      animation-duration: .01ms !important;
+      transition-duration: .01ms !important;
+    }
+  }
+}
+
+/* Reveal animations are driven by Motion; start hidden, but only if JS is on. */
+.js [data-reveal-item] { opacity: 0; }
+
+/* ── Pac-Man: pure CSS, ported as-is (pseudo-elements can't be utilities) ── */
+.pacman {
+  @apply block absolute h-[50px] w-[50px];
+  bottom: 100%; left: 50%; margin: -25px 0 0 -25px;
+}
+.pacman::before,
+.pacman::after {
+  content: '';
+  @apply absolute block w-[25px] h-[50px] bg-paper;
+  transform-origin: 100% 50%;
+  border-radius: 1000px 0 0 1000px;
+  animation: pac-chomp .5s infinite;
+}
+.pacman::before { transform: rotate(45deg); }
+.pacman::after  { transform: rotate(-45deg); animation-direction: reverse; }
+
+@keyframes pac-chomp {
+  0%, 100% { transform: rotate(45deg); }
+  50%      { transform: rotate(0deg); }
+}

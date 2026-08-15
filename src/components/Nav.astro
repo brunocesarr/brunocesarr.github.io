@@ -1,0 +1,37 @@
+---
+const links = [
+  { href: '#about', label: 'Sobre' },
+  { href: '#projects', label: 'Projetos' },
+  { href: '#contact', label: 'Contatos' },
+];
+---
+<div id="nav-sentinel" aria-hidden="true"
+     class="absolute top-0 h-[100px] w-full pointer-events-none"></div>
+
+<nav id="mainNav"
+     class="fixed inset-x-0 top-0 z-40 transition-all duration-300
+            [&.is-scrolled]:bg-paper [&.is-scrolled]:shadow-lg">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+    <a href="#page-top"
+       class="border-l border-t border-[#555] px-[5px] py-px font-sans text-2xl
+              text-paper transition-colors
+              [.is-scrolled_&]:text-body [.is-scrolled_&]:hover:text-accent">
+      DEV
+    </a>
+
+    <ul class="flex gap-6 text-sm uppercase tracking-wide">
+      {links.map(({ href, label }) => (
+        <li>
+          <a href={href} data-spy
+             class="text-paper transition-colors hover:text-accent-bright
+                    [&.is-active]:text-accent-bright
+                    [.is-scrolled_&]:text-body
+                    [.is-scrolled_&]:hover:text-accent
+                    [.is-scrolled_&.is-active]:text-accent">
+            {label}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,33 @@
+---
+const { repo } = Astro.props;
+const when = new Intl.DateTimeFormat('pt-BR', { month: 'short', year: 'numeric' })
+  .format(new Date(repo.createdAt));
+---
+<li data-reveal-item
+  class="group flex flex-col rounded-xl border border-white/10 bg-white/[0.03] p-6
+         transition-colors hover:border-accent/60 hover:bg-white/[0.06]">
+<h3 class="text-xl font-semibold">
+  <a href={repo.url} target="_blank" rel="noopener noreferrer"
+     class="transition-colors group-hover:text-accent-bright">
+    {repo.name}
+  </a>
+</h3>
+
+<p class="mt-3 flex-1 text-sm leading-relaxed text-muted">
+  {repo.description || 'Sem descrição.'}
+</p>
+
+{repo.topics.length > 0 && (
+  <ul class="mt-4 flex flex-wrap gap-2">
+    {repo.topics.slice(0, 4).map((t) => (
+      <li class="rounded-full bg-accent/15 px-2.5 py-0.5 text-xs text-accent-bright">{t}</li>
+    ))}
+  </ul>
+)}
+
+<div class="mt-5 flex items-center gap-4 border-t border-white/10 pt-4 text-xs text-muted">
+  {repo.language && <span>{repo.language}</span>}
+  {repo.stars > 0 && <span>★ {repo.stars}</span>}
+  <span class="ml-auto">{when}</span>
+</div>
+</li>

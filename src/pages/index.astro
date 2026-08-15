@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import Intro from '../components/Intro.astro';
+import About from '../components/About.astro';
+import Projects from '../components/Projects.astro';
+import Contacts from '../components/Contacts.astro';
+import CodeAnimation from '../components/CodeAnimation.astro';
+import Footer from '../components/Footer.astro';
+---
+<BaseLayout>
+<Nav />
+<main id="main">
+  <Intro />
+  <About />
+  <Projects />
+  <CodeAnimation />
+  <Contacts />
+</main>
+<Footer />
+
+<script>
+  import '../scripts/ui.ts';
+</script>
+</BaseLayout>

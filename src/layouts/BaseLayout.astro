@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'Bruno César — Developer',
+  description = 'Portfólio de Bruno César Silva, desenvolvedor em Belo Horizonte. Projetos, experiência e contato.',
+} = Astro.props;
+
+const ogImage = new URL('/images/og.png', Astro.site);
+---
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={Astro.url.href} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script is:inline>
+      document.documentElement.classList.replace('no-js', 'js');
+    </script>
+  </head>
+  <body>
+    <a href="#main"
+       class="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:m-4
+              focus:rounded focus:bg-paper focus:px-4 focus:py-2 focus:text-ink">
+      Pular para o conteúdo
+    </a>
+    <slot />
+  </body>
+</html>

@@ -1,0 +1,430 @@
+[
+  {
+    "name": "ellen-bruno-wedding",
+    "description": "",
+    "url": "https://github.com/brunocesarr/ellen-bruno-wedding",
+    "homepage": null,
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2026-05-23T01:35:34Z",
+    "pushedAt": "2026-08-15T19:37:19Z"
+  },
+  {
+    "name": "brazuerao-betting",
+    "description": "Brazuerao new app",
+    "url": "https://github.com/brunocesarr/brazuerao-betting",
+    "homepage": "https://brazuerao-betting.vercel.app",
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2026-02-02T00:25:09Z",
+    "pushedAt": "2026-03-13T23:12:45Z"
+  },
+  {
+    "name": "comida-di-buteco",
+    "description": "",
+    "url": "https://github.com/brunocesarr/comida-di-buteco",
+    "homepage": "https://comida-di-buteco.vercel.app",
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2025-05-02T02:39:20Z",
+    "pushedAt": "2026-02-02T00:33:38Z"
+  },
+  {
+    "name": "NetworkClientSDK",
+    "description": "",
+    "url": "https://github.com/brunocesarr/NetworkClientSDK",
+    "homepage": null,
+    "language": "Swift",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2025-04-03T15:50:30Z",
+    "pushedAt": "2025-04-07T20:59:21Z"
+  },
+  {
+    "name": "control-tr-sheet",
+    "description": "",
+    "url": "https://github.com/brunocesarr/control-tr-sheet",
+    "homepage": "https://control-tr-sheet.vercel.app",
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2024-12-29T18:12:46Z",
+    "pushedAt": "2026-08-12T23:52:06Z"
+  },
+  {
+    "name": "brazuerao-next-app",
+    "description": "Brazuerão Web App",
+    "url": "https://github.com/brunocesarr/brazuerao-next-app",
+    "homepage": "https://brunocesarr.github.io/brazuerao-next-app/",
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2023-05-29T22:56:13Z",
+    "pushedAt": "2026-01-17T03:04:21Z"
+  },
+  {
+    "name": "worldtrip",
+    "description": "",
+    "url": "https://github.com/brunocesarr/worldtrip",
+    "homepage": null,
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2023-01-18T00:20:02Z",
+    "pushedAt": "2023-04-06T00:21:59Z"
+  },
+  {
+    "name": "dashgo",
+    "description": "",
+    "url": "https://github.com/brunocesarr/dashgo",
+    "homepage": null,
+    "language": null,
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2022-03-15T11:50:44Z",
+    "pushedAt": "2023-02-01T01:30:18Z"
+  },
+  {
+    "name": "movies-selector-app",
+    "description": "Movies Selector Mobile Application",
+    "url": "https://github.com/brunocesarr/movies-selector-app",
+    "homepage": null,
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2021-11-14T14:53:42Z",
+    "pushedAt": "2022-11-14T20:10:27Z"
+  },
+  {
+    "name": "App-ProjectV",
+    "description": "",
+    "url": "https://github.com/brunocesarr/App-ProjectV",
+    "homepage": null,
+    "language": "Java",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2021-08-20T03:57:13Z",
+    "pushedAt": "2022-11-14T17:52:14Z"
+  },
+  {
+    "name": "spacetraveling.",
+    "description": "",
+    "url": "https://github.com/brunocesarr/spacetraveling.",
+    "homepage": null,
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2021-04-10T18:15:35Z",
+    "pushedAt": "2021-05-17T01:45:44Z"
+  },
+  {
+    "name": "ignews",
+    "description": "",
+    "url": "https://github.com/brunocesarr/ignews",
+    "homepage": null,
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2021-04-03T18:16:14Z",
+    "pushedAt": "2021-04-03T18:16:23Z"
+  },
+  {
+    "name": "WatchMe",
+    "description": "Desafio 02 - Componentizando a aplicação: Aplicação com foco na listagem de filmes de acordo com gênero. ",
+    "url": "https://github.com/brunocesarr/WatchMe",
+    "homepage": null,
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2021-03-27T21:36:21Z",
+    "pushedAt": "2021-03-27T22:02:59Z"
+  },
+  {
+    "name": "ignite-to-do-challenge",
+    "description": "Simple tasks manager.",
+    "url": "https://github.com/brunocesarr/ignite-to-do-challenge",
+    "homepage": "https://brunocesarr.github.io/ignite-to-do-challenge/",
+    "language": "TypeScript",
+    "topics": [
+      "jest",
+      "react",
+      "testing-library-react",
+      "typescript"
+    ],
+    "stars": 0,
+    "createdAt": "2021-03-11T00:52:04Z",
+    "pushedAt": "2021-03-11T11:52:39Z"
+  },
+  {
+    "name": "move-it",
+    "description": "Move It is a project to help people to make more exercises.",
+    "url": "https://github.com/brunocesarr/move-it",
+    "homepage": "https://move-it-7qd033rax-brunocesarr.vercel.app/",
+    "language": "TypeScript",
+    "topics": [
+      "jest",
+      "nextjs",
+      "testing-library",
+      "typescript",
+      "vercel"
+    ],
+    "stars": 0,
+    "createdAt": "2021-02-28T14:49:21Z",
+    "pushedAt": "2021-03-20T00:51:03Z"
+  },
+  {
+    "name": "ProjectV",
+    "description": "Desenvolvimento de uma aplicação de RA integrando ferramentas como VuforiaAR, IBM Cloud e Unity.",
+    "url": "https://github.com/brunocesarr/ProjectV",
+    "homepage": null,
+    "language": "C#",
+    "topics": [],
+    "stars": 1,
+    "createdAt": "2020-12-22T23:50:14Z",
+    "pushedAt": "2023-04-17T01:55:01Z"
+  },
+  {
+    "name": "christmas-card",
+    "description": "",
+    "url": "https://github.com/brunocesarr/christmas-card",
+    "homepage": null,
+    "language": "SCSS",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2020-12-08T21:27:24Z",
+    "pushedAt": "2020-12-19T13:53:04Z"
+  },
+  {
+    "name": "TP_Final_Bootcamp_IGTI",
+    "description": "Repositório para o projeto final do bootcamp IGTI de FrontEnd.",
+    "url": "https://github.com/brunocesarr/TP_Final_Bootcamp_IGTI",
+    "homepage": null,
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2020-11-11T02:05:54Z",
+    "pushedAt": "2020-11-19T20:45:56Z"
+  },
+  {
+    "name": "TP_1_ModuloVueJS_IGTI",
+    "description": "Trabalho prático desenvolvido com finalidade de praticar conceitos adquiridos no módulo 4.",
+    "url": "https://github.com/brunocesarr/TP_1_ModuloVueJS_IGTI",
+    "homepage": null,
+    "language": "Vue",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2020-11-06T21:55:11Z",
+    "pushedAt": "2020-11-08T02:58:58Z"
+  },
+  {
+    "name": "Project_Rasa",
+    "description": "",
+    "url": "https://github.com/brunocesarr/Project_Rasa",
+    "homepage": null,
+    "language": "HTML",
+    "topics": [
+      "python",
+      "rasa",
+      "rasa-core",
+      "rasa-nlu"
+    ],
+    "stars": 0,
+    "createdAt": "2020-10-31T22:08:30Z",
+    "pushedAt": "2022-11-14T17:49:59Z"
+  },
+  {
+    "name": "TP2_M3_Bootcamp_IGTI",
+    "description": "",
+    "url": "https://github.com/brunocesarr/TP2_M3_Bootcamp_IGTI",
+    "homepage": null,
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2020-10-30T01:31:45Z",
+    "pushedAt": "2020-10-30T03:48:27Z"
+  },
+  {
+    "name": "desafion-1.2_SearchDev",
+    "description": "Desafio 2 do módulo 1 proposto no bootcamp de FrontEnd do IGTI.",
+    "url": "https://github.com/brunocesarr/desafion-1.2_SearchDev",
+    "homepage": null,
+    "language": "HTML",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2020-09-26T17:50:58Z",
+    "pushedAt": "2020-09-27T00:46:41Z"
+  },
+  {
+    "name": "API.Users",
+    "description": "Desenvolvimento de uma API em .NET.",
+    "url": "https://github.com/brunocesarr/API.Users",
+    "homepage": null,
+    "language": "C#",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2020-07-14T15:52:31Z",
+    "pushedAt": "2020-10-25T16:19:41Z"
+  },
+  {
+    "name": "NLW_Ecoleta_Backend",
+    "description": "",
+    "url": "https://github.com/brunocesarr/NLW_Ecoleta_Backend",
+    "homepage": null,
+    "language": null,
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2020-06-07T15:48:32Z",
+    "pushedAt": "2020-06-07T15:49:03Z"
+  },
+  {
+    "name": "NLW_Ecoleta",
+    "description": "",
+    "url": "https://github.com/brunocesarr/NLW_Ecoleta",
+    "homepage": null,
+    "language": "TypeScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2020-06-07T15:46:49Z",
+    "pushedAt": "2020-06-21T15:34:36Z"
+  },
+  {
+    "name": "API_Flourish",
+    "description": "Desenvolvimento da api para a solução proposta no Mega Hack.",
+    "url": "https://github.com/brunocesarr/API_Flourish",
+    "homepage": null,
+    "language": "JavaScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2020-05-01T21:31:00Z",
+    "pushedAt": "2020-07-07T23:55:54Z"
+  },
+  {
+    "name": "TP_SD",
+    "description": "Esta aplicação API visa dar suporte à rede de desenvolvedores apoiando a organização e identificação, filtrando por regiões e/ou linguagens. ",
+    "url": "https://github.com/brunocesarr/TP_SD",
+    "homepage": null,
+    "language": "JavaScript",
+    "topics": [
+      "eloquent-orm",
+      "laravel",
+      "mongodb",
+      "projeto"
+    ],
+    "stars": 0,
+    "createdAt": "2019-10-21T04:03:46Z",
+    "pushedAt": "2023-01-07T05:21:57Z"
+  },
+  {
+    "name": "nxstep",
+    "description": "",
+    "url": "https://github.com/brunocesarr/nxstep",
+    "homepage": null,
+    "language": "Shell",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2019-10-01T17:41:48Z",
+    "pushedAt": "2019-10-06T12:57:02Z"
+  },
+  {
+    "name": "Ovos",
+    "description": "Site para apresentação de Ovos",
+    "url": "https://github.com/brunocesarr/Ovos",
+    "homepage": null,
+    "language": "PHP",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2019-08-13T23:19:50Z",
+    "pushedAt": "2019-08-29T21:49:07Z"
+  },
+  {
+    "name": "entrepatas",
+    "description": "",
+    "url": "https://github.com/brunocesarr/entrepatas",
+    "homepage": null,
+    "language": "JavaScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2019-07-07T14:54:42Z",
+    "pushedAt": "2019-09-27T10:56:42Z"
+  },
+  {
+    "name": "Mundo_Wumpus",
+    "description": "Trabalho Prático 2 - Inteligência Artificial",
+    "url": "https://github.com/brunocesarr/Mundo_Wumpus",
+    "homepage": null,
+    "language": "Java",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2019-02-01T09:09:41Z",
+    "pushedAt": "2019-02-01T09:11:57Z"
+  },
+  {
+    "name": "Bar_Soares_WEB",
+    "description": "",
+    "url": "https://github.com/brunocesarr/Bar_Soares_WEB",
+    "homepage": null,
+    "language": "JavaScript",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2019-01-18T20:58:14Z",
+    "pushedAt": "2019-01-18T21:03:50Z"
+  },
+  {
+    "name": "Bar_Soares",
+    "description": "Trabalho proposto pelo docente da disciplina de Engenharia de Software, desenvolvido em java.",
+    "url": "https://github.com/brunocesarr/Bar_Soares",
+    "homepage": null,
+    "language": "Java",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2019-01-09T08:53:38Z",
+    "pushedAt": "2019-01-18T21:11:53Z"
+  },
+  {
+    "name": "SearchProject",
+    "description": "Projeto a ser desenvolvido para fins de estágio.",
+    "url": "https://github.com/brunocesarr/SearchProject",
+    "homepage": null,
+    "language": "PHP",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2018-12-28T04:54:48Z",
+    "pushedAt": "2019-04-10T05:41:38Z"
+  },
+  {
+    "name": "KageHand",
+    "description": "Trabalho proposto pelo docente da disciplina de Banco de Dados II.",
+    "url": "https://github.com/brunocesarr/KageHand",
+    "homepage": null,
+    "language": "HTML",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2018-12-23T22:06:10Z",
+    "pushedAt": "2019-01-29T09:08:58Z"
+  },
+  {
+    "name": "Busca_A",
+    "description": "",
+    "url": "https://github.com/brunocesarr/Busca_A",
+    "homepage": null,
+    "language": "Java",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2018-12-07T08:45:10Z",
+    "pushedAt": "2022-08-30T04:40:39Z"
+  },
+  {
+    "name": "REPGEMENT",
+    "description": "",
+    "url": "https://github.com/brunocesarr/REPGEMENT",
+    "homepage": null,
+    "language": "PHP",
+    "topics": [],
+    "stars": 0,
+    "createdAt": "2018-11-15T02:00:04Z",
+    "pushedAt": "2022-12-02T16:29:03Z"
+  }
+]
