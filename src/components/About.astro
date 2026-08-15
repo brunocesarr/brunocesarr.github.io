@@ -8,7 +8,7 @@ const t = useTranslations(lang);
 <section id="about" class="bg-paper px-6 py-24 text-body">
 <div class="mx-auto max-w-5xl" data-reveal>
   <div class="text-center">
-    <h2 data-reveal-item class="text-3xl font-semibold text-ink">Um pouco sobre mim</h2>
+    <h2 data-reveal-item class="text-3xl font-semibold text-ink">{t('about.heading')}</h2>
     <hr data-reveal-item class="mx-auto my-4 h-1 w-16 border-0 bg-accent" />
     <p  data-reveal-item class="italic text-body/70">"Live a life you will remember!"</p>
   </div>
@@ -20,7 +20,7 @@ const t = useTranslations(lang);
            class="aspect-square w-full object-cover" />
       <figcaption class="bg-paper py-4 text-center">
         <span class="block font-semibold text-ink">Bruno C. Silva</span>
-        <span class="text-sm text-body/60">Developer</span>
+        <span class="text-sm text-body/60">{t('about.role')}</span>
       </figcaption>
     </figure>
 
