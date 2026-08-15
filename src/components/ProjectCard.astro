@@ -1,33 +1,37 @@
 ---
-const { repo } = Astro.props;
-const when = new Intl.DateTimeFormat('pt-BR', { month: 'short', year: 'numeric' })
+import { useTranslations } from '../i18n/utils';
+import type { Lang } from '../i18n/ui';
+
+const { repo, lang } = Astro.props as { repo: any; lang: Lang };
+const t = useTranslations(lang);
+
+const locale = lang === 'pt-br' ? 'pt-BR' : 'en-GB';
+const when = new Intl.DateTimeFormat(locale, { month: 'short', year: 'numeric' })
   .format(new Date(repo.createdAt));
 ---
 <li data-reveal-item
-  class="group flex flex-col rounded-xl border border-white/10 bg-white/[0.03] p-6
-         transition-colors hover:border-accent/60 hover:bg-white/[0.06]">
-<h3 class="text-xl font-semibold">
-  <a href={repo.url} target="_blank" rel="noopener noreferrer"
-     class="transition-colors group-hover:text-accent-bright">
-    {repo.name}
-  </a>
-</h3>
+    class="group flex flex-col rounded-xl border border-white/10 bg-white/[0.03] p-6
+           transition-colors hover:border-accent/60 hover:bg-white/[0.06]">
+  <h3 class="text-xl font-semibold">
+    <a href={repo.url} target="_blank" rel="noopener noreferrer"
+       class="transition-colors group-hover:text-accent-bright">{repo.name}</a>
+  </h3>
 
-<p class="mt-3 flex-1 text-sm leading-relaxed text-muted">
-  {repo.description || 'Sem descrição.'}
-</p>
+  <p class="mt-3 flex-1 text-sm leading-relaxed text-muted">
+    {repo.description || t('projects.noDescription')}
+  </p>
 
-{repo.topics.length > 0 && (
-  <ul class="mt-4 flex flex-wrap gap-2">
-    {repo.topics.slice(0, 4).map((t) => (
-      <li class="rounded-full bg-accent/15 px-2.5 py-0.5 text-xs text-accent-bright">{t}</li>
-    ))}
-  </ul>
-)}
+  {repo.topics.length > 0 && (
+    <ul class="mt-4 flex flex-wrap gap-2">
+      {repo.topics.slice(0, 4).map((tp: string) => (
+        <li class="rounded-full bg-accent/15 px-2.5 py-0.5 text-xs text-accent-bright">{tp}</li>
+      ))}
+    </ul>
+  )}
 
-<div class="mt-5 flex items-center gap-4 border-t border-white/10 pt-4 text-xs text-muted">
-  {repo.language && <span>{repo.language}</span>}
-  {repo.stars > 0 && <span>★ {repo.stars}</span>}
-  <span class="ml-auto">{when}</span>
-</div>
+  <div class="mt-5 flex items-center gap-4 border-t border-white/10 pt-4 text-xs text-muted">
+    {repo.language && <span>{repo.language}</span>}
+    {repo.stars > 0 && <span>★ {repo.stars}</span>}
+    <span class="ml-auto">{when}</span>
+  </div>
 </li>

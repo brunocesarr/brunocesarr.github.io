@@ -1,4 +1,9 @@
 ---
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
 const socials = [
 { label: 'GitHub',    href: 'https://github.com/brunocesarr' },
 { label: 'LinkedIn',  href: 'https://www.linkedin.com/in/bruno-silva-9a155816b/' },
@@ -8,7 +13,7 @@ const socials = [
 ---
 <section id="contact" class="px-6 py-24">
 <div class="mx-auto max-w-3xl text-center" data-reveal>
-  <h2 data-reveal-item class="text-3xl font-semibold">Contatos</h2>
+  <h2 data-reveal-item class="text-3xl font-semibold">{t('contact.heading')}</h2>
   <hr data-reveal-item class="mx-auto my-4 h-1 w-16 border-0 bg-accent" />
 
   <ul class="mt-10 flex flex-wrap justify-center gap-4">

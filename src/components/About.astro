@@ -1,3 +1,10 @@
+---
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
 <section id="about" class="bg-paper px-6 py-24 text-body">
 <div class="mx-auto max-w-5xl" data-reveal>
   <div class="text-center">
@@ -18,13 +25,9 @@
     </figure>
 
     <div data-reveal-item class="space-y-4 leading-relaxed text-body/80">
-      <p>Sim. Acredito no pensamento de Thomas Hobbes: "Conhecimento é poder".
-         A procura do novo é uma arte. Estamos a nos construir. Eu vi e vivencio
-         como é a caminhada, e o quanto ela nos torna cada vez melhores.</p>
-      <p>Por essas e por outras, eu sou grande crente no poder do sorriso no rosto.</p>
-      <p>E é assim que busco meus sonhos. Poder viajar para conhecer as maravilhas
-         que a Terra nos proporciona. Esse sentimento de paz é único e relaxante.
-         Nos permite conhecer novas culturas e pessoas, expandindo nosso pensamento.</p>
+      <p>{t('about.p1')}</p>
+      <p>{t('about.p2')}</p>
+      <p>{t('about.p3')}</p>
     </div>
   </div>
 </div>
